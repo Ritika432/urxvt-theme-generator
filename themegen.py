@@ -10,7 +10,7 @@ from settings import *
 @click.option("--wall", is_flag=True, help="set the file as wallpaper")
 
 def cli(filename,wr,wall):
-    """ CLI entry point """
+    """ change color scheme of urxvt terminal according to wallpaper """
 
     argb, argbi = blendit.calculate(filename)
 
